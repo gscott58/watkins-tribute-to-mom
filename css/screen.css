@@ -1,128 +1,208 @@
-/* Normalize.css
------------------------------------------------ */
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}html,button,input,select,textarea{font-family:sans-serif;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}h2{font-size:1.5em;margin:0.83em 0;}h3{font-size:1.17em;margin:1em 0;}h4{font-size:1em;margin:1.33em 0;}h5{font-size:0.83em;margin:1.67em 0;}h6{font-size:0.75em;margin:2.33em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}blockquote{margin:1em 40px;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}p,pre{margin:1em 0;}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em;}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}q:before,q:after{content:'';content:none;}small{font-size:75%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}dl,menu,ol,ul{margin:1em 0;}dd{margin:0 0 0 40px;}menu,ol,ul{padding:0 0 0 40px;}nav ul,nav ol{list-style:none;list-style-image:none;}img{border:0;-ms-interpolation-mode:bicubic;}svg:not(:root){overflow:hidden;}figure{margin:0;}form{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}button,input{line-height:normal;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible;}button[disabled],input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
-/*----------------------------------------------------------*/
-/*- CSS to place text on an image - (Begins)               -*/
-/*----------------------------------------------------------*/
-/*- top-left, top-right, center, bottom-left, bottom-right -*/
-/*----------------------------------------------------------*/
-h1 {
-	font-size:          3.6vw;     /* Make H1 font size scaleable at 3.6 percent viewport width */
+/*--------------------------*/
+/*-    Normalize.css       -*/
+/*--------------------------*/
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}html,button,input,select,textarea{font-family:sans-serif;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}h2{font-size:1.5em;margin:0.83em 0;}h1{font-size:1.17em;margin:1em 0;}h4{font-size:1em;margin:1.33em 0;}h5{font-size:0.83em;margin:1.67em 0;}h6{font-size:0.75em;margin:2.33em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}blockquote{margin:1em 40px;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}p,pre{margin:1em 0;}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em;}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}q:before,q:after{content:'';content:none;}small{font-size:75%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}dl,menu,ol,ul{margin:1em 0;}dd{margin:0 0 0 40px;}menu,ol,ul{padding:0 0 0 40px;}nav ul,nav ol{list-style:none;list-style-image:none;}img{border:0;-ms-interpolation-mode:bicubic;}svg:not(:root){overflow:hidden;}figure{margin:0;}form{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}button,input{line-height:normal;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible;}button[disabled],input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+/*---------------------------------------*/
+/*-    Mobile First CSS Declarations    -*/
+/*---------------------------------------*/
+* {
+      box-sizing: border-box;
+    }
+
+h1, h2, h3 {
+	font-size:          2.6vw;     /* Make H1 font size scaleable at 3.6 percent viewport width */
+  text-align:         center;
 }
+  
 #body {
-	height:             auto;
 	margin:             10px;
-	padding:            1px;
 	border:             1px solid black;
 	text-overflow:      ellipsis;
 	overflow:           hidden;
-	background-image:   url("../backgrounds/20.jpg"); 
+	background-image:   url("../backgrounds/20.jpg");
 	background-size:    cover; 
-	background-repeat:  no-repeat; 
-	
+	background-repeat:  no-repeat;
 }
-#siteid {
-    font-size: 1.50em;
-}
-.siteheader {
+
+h1, h2, h3 {
     font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size:     1.25em;
     color:         #ffff00;
     margin-top:    10px;
-    margin-botton: 10px;
+    margin-bottom: 10px;
     margin-left:   10px;
     margin-right:  10px;
 }
 
-.siteheader {
-    position:       relative;
-    text-align:     center;
-}
-
-/* Bottom left text */
-.bottom-left {
-    position:       absolute;
-    bottom:         8px;
-    left:           16px;
-}
-
-/* Top left text */
-.top-left {
-    position:       absolute;
-    top:            8px;
-    left:           16px;
-}
-
-/* Top right text */
-.top-right {
-    position:       absolute;
-    top:            8px;
-    right:          16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-    position:       absolute;
-    bottom:         8px;
-    right:          16px;
-    color:          white;
-}
-
-.bottom-right {	
-	font-size:      10px;                  /* override smaller font size */
-}
-
-/* Centered text */
-.centered {
-    position:       absolute;
-    top:            50%;
-    left:           50%;
-    transform:      translate(-50%, -50%);
-}
-/*------------------------------------------*/
-/*- CSS to place text on an image - (Ends) -*/
-/*------------------------------------------*/
-
 main {
     font-family:        'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size:          18px;
     color:              #222;
-    background-color:   #e9e9e9;    
-    
-	margin-left:        10px;
-	margin-right:       10px;
-    margin-top:         10px;
-	margin-bottom:      10px;
+    background-color:   #e9e9e9;
+    border:             1px solid black;    
+    margin:             auto;
 }
 
-main ul li {   
-	margin-bottom:      5px;       /* increase spacing between unordered list items */ 
+img {
+    width:    100%;
+    margin:   auto;
 }
 
 p {
 	margin-left:    10px;
 }
 
-footer {
+.copyright {
 	clear:          left;
-    font-family:    'Lato', sans-serif;  /* use Lato Font for footer section too */
-	font-size:      10px;                /* smaller font size */
-    
+  font-family:    'Lato', sans-serif;
+	font-size:      .83em; 
 	margin-top:     10px;
-	text-align:     center;              /* centered too */
+	text-align:     center;
 }
 /*-----------------------------------------------------*/
-/*-    Accommodations for Devices 480px and Greater   -*/
+/*-   (Mobile Portrait) Declaratons                   -*/
 /*-----------------------------------------------------*/
-@media only screen and (min-width: 480px) {
- 
-    .siteheader {
-        font-size:  2em;
-    }
-    #siteid{
-        font-size:  2.25em;
-    }
+  body {
+        background-color:   #A0522D;
+  }
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+
+   h1 {font-size:   1em;}
+   h2 {font-size:  .75em;}
+   h3 {font-size:  .58em;}
+   h4 {font-size:  .50em;}
+   h5 {font-size:  .41em;}
+   h6 {font-size:  .37em;}
+   
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  
+/*-------------------------------------------------------*/
+/*-  (Mobile) Landscape Declarations                    -*/
+/*-------------------------------------------------------*/
+@media only screen and (orientation: landscape) {
+  /* mobile only: */
+  
+  body {
+        background-color:   #00ffff;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  #organizers {
+        float:      left;
+  }
+      
+  #whenwhere {
+    float:          right;
+  }
+
+  footer {
+      clear: left;
+  }
 }
-/*-----------------------------------------*/
-/*- End Accommodations for Laeger Devices -*/
-/*-----------------------------------------*/
+/*-----------------------------------------------------*/
+/*-   (Tablet) Accomodations                          -*/
+/*-----------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  body {
+        background-color:   #00ff00;
+  }
+   h1 {font-size:   1.25em;}
+   h2 {font-size:  .93em;}
+   h3 {font-size:  .72em;}
+   h4 {font-size:  .62em;}
+   h5 {font-size:  .51em;}
+   h6 {font-size:  .46em;}
+   
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  #organizers {
+        float:      left;
+  }
+      
+  #whenwhere {
+    float:          right;
+  }
+    
+  footer {
+      clear: left;
+  }
+}
+/*-----------------------------------------------------*/
+/*- (Desktops) Accomodations                          -*/
+/*-----------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  
+  body {
+        background-color:   #0000ff;
+  }
+  
+   h1 {font-size:   1.56em;}
+   h2 {font-size:   1.16em;}
+   h3 {font-size:  .90em;}
+   h4 {font-size:  .77em;}
+   h5 {font-size:  .63em;}
+   h6 {font-size:  .57em;}
+  
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  #organizers {
+        float:      left;
+  }
+      
+  #whenwhere {
+    float:          right;
+  }
+
+  footer {
+      clear: left;
+  }
+}
+
